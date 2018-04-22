@@ -1,31 +1,31 @@
 [
   {
-    "key": "cvc_app/",
+    "key": "__APP_NAME__/",
     "flags": 0,
     "value": ""
   },
   {
-    "key": "cvc_app/spring.profiles.active",
+    "key": "__APP_NAME__/spring.profiles.active",
     "flags": 0,
     "value": "ZGV2"
   },
   {
-    "key": "cvc_app/spring.datasource.platform",
+    "key": "__APP_NAME__/spring.datasource.platform",
     "flags": 0,
     "value": "T3JhY2xl"
   },
   {
-    "key": "cvc_app/spring.datasource.url",
+    "key": "__APP_NAME__/spring.datasource.url",
     "flags": 0,
     "value": "amRiYzpvcmFjbGU6dGhpbjpAMTcyLjE2LjgyLjIzOjE1MjEvUERCQ1ZDRDE="
   },
   {
-    "key": "cvc_app/server.port",
+    "key": "__APP_NAME__/server.port",
     "flags": 0,
     "value": "ODA4MA=="
   },
   {
-    "key": "cvc_app/partner.endpoint",
+    "key": "__APP_NAME__/partner.endpoint",
     "flags": 0,
     "value": "aHR0cDovL2xvY2FsaG9zdDo4MDgx"
   }

@@ -1,28 +1,28 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: cvc_app-deploy
+  name: __APP_NAME__-deploy
   labels:
-    app: cvc_app
+    app: __APP_NAME__
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cvc_app
+      app: __APP_NAME__
   template:
     metadata:
       labels:
-        app: cvc_app
+        app: __APP_NAME__
     spec:
       containers:
-      - name: cvc_app
+      - name: __APP_NAME__
         livenessProbe:
           httpGet:
             path: /health
             port: 8080
           initialDelaySeconds: 70
           periodSeconds: 10
-        image: 260584439167.dkr.ecr.sa-east-1.amazonaws.com/cvc_app:__TAG__
+        image: 260584439167.dkr.ecr.sa-east-1.amazonaws.com/__APP_NAME__:__TAG__
         resources:
           requests:
             cpu: 200m
@@ -32,12 +32,12 @@ spec:
          - name: CONSUL_HOST
            valueFrom:
              configMapKeyRef:
-               name: cvc_app
+               name: __APP_NAME__
                key: CONSUL_HOST
          - name: PREFIX
-           value: cvc_app
+           value: __APP_NAME__
          - name: VAULT_SECURITY_TOKEN
            valueFrom:
              secretKeyRef:
-               name: cvc_app
+               name: __APP_NAME__
                key: VAULT_SECURITY_TOKEN

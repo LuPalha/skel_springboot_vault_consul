@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: cvc_app
-  namespace: cvc_app
+  name: __APP_NAME__
+  namespace: __APP_NAME__
 data:
   ADDITIONAL_OPTS: " "
-  PREFIX: cvc_app
+  PREFIX: __APP_NAME__
   VAULT_HOST: vault-dev.services.cvc.com.br
   VAULT_SCHEME: http
   CONSUL_HOST: consul-dev.services.cvc.com.br

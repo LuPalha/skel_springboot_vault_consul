@@ -1,14 +1,14 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: cvc_app-service
-  namespace: cvc_app
+  name: __APP_NAME__-service
+  namespace: __APP_NAME__
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-internal: 0.0.0.0/0
-    dns.alpha.kubernetes.io/internal: cvc_app.__SERVICE_ENV__.com.br
+    dns.alpha.kubernetes.io/internal: __APP_NAME__.__SERVICE_ENV__.com.br
 spec:
   selector:
-    app: cvc_app
+    app: __APP_NAME__
   ports:
   - name: mainport
     protocol: TCP
