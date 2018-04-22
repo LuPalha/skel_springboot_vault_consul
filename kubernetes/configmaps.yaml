@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cvc_app
+  namespace: cvc_app
+data:
+  ADDITIONAL_OPTS: " "
+  PREFIX: cvc_app
+  VAULT_HOST: vault-dev.services.cvc.com.br
+  VAULT_SCHEME: http
+  CONSUL_HOST: consul-dev.services.cvc.com.br
+  CONSUL_PORT: "8500"
+  RABBITMQ_HOST: rabbitmq.k8s-ti-cvc.com.br
+  RABBITMQ_PORT: "5672"

@@ -1,0 +1,21 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: cvc_app-service
+  namespace: cvc_app
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-internal: 0.0.0.0/0
+    dns.alpha.kubernetes.io/internal: cvc_app.__SERVICE_ENV__.com.br
+spec:
+  selector:
+    app: cvc_app
+  ports:
+  - name: mainport
+    protocol: TCP
+    port: 8080
+    targetPort: 8080
+  - name: secport
+    protocol: TCP
+    port: 5005
+    targetPort: 5005
+  type: LoadBalancer
