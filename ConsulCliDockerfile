@@ -1,0 +1,6 @@
+FROM consul:latest
+
+RUN mkdir consul-cli
+WORKDIR consul-cli
+COPY ./data/consul/data.json data.json
+RUN mkdir -p /consul/{data,config} && chown -R consul:consul /consul
