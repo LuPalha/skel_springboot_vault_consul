@@ -1,0 +1,33 @@
+[
+  {
+    "key": "__APP_NAME__/",
+    "flags": 0,
+    "value": ""
+  },
+  {
+    "key": "__APP_NAME__/spring.profiles.active",
+    "flags": 0,
+    "value": "ZGV2"
+  },
+  {
+    "key": "__APP_NAME__/spring.datasource.platform",
+    "flags": 0,
+    "value": "T3JhY2xl"
+  },
+  {
+    "key": "__APP_NAME__/spring.datasource.url",
+    "flags": 0,
+    "value": "amRiYzpvcmFjbGU6dGhpbjpAMTcyLjE2LjgyLjIzOjE1MjEvUERCQ1ZDRDE="
+  },
+  {
+    "key": "__APP_NAME__/server.port",
+    "flags": 0,
+    "value": "ODA4MA=="
+  },
+  {
+    "key": "__APP_NAME__/partner.endpoint",
+    "flags": 0,
+    "value": "aHR0cDovL2xvY2FsaG9zdDo4MDgx"
+  }
+
+]
