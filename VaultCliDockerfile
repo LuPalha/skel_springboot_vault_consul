@@ -1,6 +1,0 @@
-FROM vault:latest
-
-RUN mkdir vault-cli
-WORKDIR vault-cli
-COPY ./data/vault/vault-initialize.sh .
-RUN chmod +x vault-initialize.sh
